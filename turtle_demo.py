@@ -51,10 +51,24 @@ if search_query:
 
 # 4. Dashboard Metrics
 c1, c2, c3 = st.columns(3)
+
+# Metric 1: The big number
 c1.metric("Total Leads Found", len(filtered_df))
-c2.metric("Commercial Profiles", len(filtered_df[filtered_df['Residential?'] == 'No']))
-# Style the Out-of-State metric to stand out
-c3.metric("Remote Decision Makers", df['Outside_FL'].sum(), delta="Gold Leads", delta_color="normal")
+
+# Metric 2: Filter for any company that has '2025' in the 'File_Date' or 'Last_Event_Date' column
+# This assumes your column is named 'File_Year' or you're checking for '2025' in the date
+filed_2025_count = len(filtered_df[filtered_df['File_Date'].astype(str).str.contains('2025', na=False)])
+c2.metric("Filed in 2025", filed_2025_count)
+
+# Metric 3: The Out-of-State Warning System
+# We change the label and the "Delta" to act as a warning/check factor
+out_of_state_count = df['Outside_FL'].sum()
+c3.metric(
+    label="One Out-of-State Address", 
+    value=out_of_state_count, 
+    delta="Check HQ Location", 
+    delta_color="inverse"  # This turns the label red/warning color
+)
 
 # 5. NEW SCATTER MAP (Individual Dots)
 st.write("### 📍 Commercial Territory Map")
@@ -62,7 +76,7 @@ st.write("### 📍 Commercial Territory Map")
 fig = px.scatter_mapbox(filtered_df, 
                         lat='lat', 
                         lon='lon', 
-                        color='Residential?',
+                        color='Resi-dential?',
                         color_discrete_map={'No': '#00CC96', 'Yes': '#EF553B'}, # Green for Biz, Red for Home
                         center=dict(lat=28.14, lon=-82.35), 
                         zoom=11,
