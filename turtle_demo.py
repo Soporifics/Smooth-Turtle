@@ -12,7 +12,7 @@ st.subheader("Interactive Demo: ZIP 33647 (New Tampa)")
 # 2. Optimized Data Loading
 @st.cache_data
 def load_data():
-    # Loading the file and cleaning column names just in case of hidden spaces
+    # Loading the file and cleaning column names
     df = pd.read_excel('33647_Demo_Leads.xlsx')
     df.columns = df.columns.str.strip()
     
@@ -51,21 +51,22 @@ if search_query:
 # 4. Dashboard Metrics
 c1, c2, c3 = st.columns(3)
 
-# Total Leads
+# Metric 1: Current List Size (changes with filters)
 c1.metric("Total Leads Found", len(filtered_df))
 
-# Freshness Metric: Filed in 2025
-filed_2025 = len(filtered_df[filtered_df['File_Date'].astype(str).str.contains('2025', na=False)])
-c2.metric("Filed in 2025", filed_2025)
+# Metric 2: Total Active Market (remains steady for the ZIP code)
+# This counts all 'AFLA' status companies in the entire loaded file
+total_active = len(df[df['Status'] == 'AFLA'])
+c2.metric("Active Companies", total_active)
 
-# Compliance Metric: One Out-of-State Address (Warning for FL Agents)
-out_of_state_count = filtered_df['Outside_FL'].sum()
+# Metric 3: Compliance Warning (remains steady as a risk assessment)
+out_of_state_total = df['Outside_FL'].sum()
 c3.metric(label="One Out-of-State Address", 
-          value=out_of_state_count, 
+          value=out_of_state_total, 
           delta="Check Headquarters Location", 
           delta_color="inverse")
 
-# 5. THE MAP (With Safety Check)
+# 5. THE MAP
 st.write("### 📍 Commercial Territory Map")
 
 if not filtered_df.empty:
@@ -91,6 +92,5 @@ else:
 
 # 6. Data Grid
 st.write("### 📋 Lead Details (Non-Downloadable Preview)")
-# Clean up display (hide the helper columns)
 display_cols = [c for c in filtered_df.columns if c not in ['lat', 'lon', 'Outside_FL']]
 st.dataframe(filtered_df[display_cols], use_container_width=True)
