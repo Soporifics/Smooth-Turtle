@@ -52,7 +52,7 @@ if search_query:
 # 4. Dashboard Metrics
 c1, c2, c3 = st.columns(3)
 c1.metric("Total Leads Found", len(filtered_df))
-c2.metric("Commercial Profiles", len(filtered_df[filtered_df['Resi-dential?'] == 'No']))
+c2.metric("Commercial Profiles", len(filtered_df[filtered_df['Residential?'] == 'No']))
 # Style the Out-of-State metric to stand out
 c3.metric("Remote Decision Makers", df['Outside_FL'].sum(), delta="Gold Leads", delta_color="normal")
 
