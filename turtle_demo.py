@@ -62,7 +62,7 @@ st.write("### 📍 Commercial Territory Map")
 fig = px.scatter_mapbox(filtered_df, 
                         lat='lat', 
                         lon='lon', 
-                        color='Resi-dential?',
+                        color='Residential?',
                         color_discrete_map={'No': '#00CC96', 'Yes': '#EF553B'}, # Green for Biz, Red for Home
                         center=dict(lat=28.14, lon=-82.35), 
                         zoom=11,
