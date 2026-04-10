@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"ripple\\\\|click-effect\\\\|wave\" /c/users/timot/SmoothTurtle/Claude/*.html)",
+      "Read(//c/users/timot/SmoothTurtle/**)"
+    ]
+  }
+}

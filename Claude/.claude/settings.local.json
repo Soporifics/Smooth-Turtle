@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(cmd /c \"dir C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude 2>&1\")",
+      "Bash(cmd /c \"mkdir C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\css 2>&1 & mkdir C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\js 2>&1 & mkdir C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\images 2>&1 & copy \"\"C:\\\\Users\\\\timot\\\\OneDrive\\\\Pictures\\\\AI Generated Pics\\\\SmoothTurtle-Logo AI.png\"\" \"\"C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\images\\\\turtle-logo.png\"\" 2>&1 & echo DONE\")",
+      "Bash(cmd /c \"mkdir \"\"C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\css\"\"\")",
+      "Bash(cmd /c:*)",
+      "Bash(cmd /c \"mkdir \"\"C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\images\"\"\")",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\css'',''C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\js'',''C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\images''; Copy-Item -Path ''C:\\\\Users\\\\timot\\\\OneDrive\\\\Pictures\\\\AI Generated Pics\\\\SmoothTurtle-Logo AI.png'' -Destination ''C:\\\\Users\\\\timot\\\\SmoothTurtle\\\\Claude\\\\images\\\\turtle-logo.png''; Write-Host ''Done''\")",
+      "Bash(powershell -Command:*)",
+      "WebFetch(domain:torhenrik.com)",
+      "WebSearch"
+    ]
+  }
+}

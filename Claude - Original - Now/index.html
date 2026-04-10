@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Turtle | AI Education for Smart Non-Techies &amp; Small Business</title>
+  <meta name="description" content="Smooth Turtle offers hands-on AI education for smart non-techies and small businesses in the Tampa Bay Area. Come out of your shell and glide into the age of AI — smoothly, safely, and on your terms." />
+  <meta name="keywords" content="AI education, artificial intelligence for beginners, AI for small business, Tampa AI training, non-techie AI, AI workshops Tampa, ChatGPT training, smooth turtle, AI literacy, Tampa Bay FL, remote AI education" />
+  <meta name="author" content="Dr. Timothy Hays, Smooth Turtle" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.smoothturtle.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.smoothturtle.com/" />
+  <meta property="og:title"       content="Smooth Turtle | AI Education Made Simple" />
+  <meta property="og:description" content="A smooth, deliberate fun ride into the age of AI — while everyone else catches up. AI education for non-techies and small businesses, Tampa Bay FL." />
+  <meta property="og:image"       content="https://www.smoothturtle.com/images/turtle-logo.png" />
+  <meta property="og:site_name"   content="Smooth Turtle" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@smoothturtle" />
+  <meta name="twitter:title"       content="Smooth Turtle | AI Education Made Simple" />
+  <meta name="twitter:description" content="Hands-on AI exploring for smart non-techies and small businesses. Come out of your shell!" />
+  <meta name="twitter:image"       content="https://www.smoothturtle.com/images/turtle-logo.png" />
+
+  <!-- Facebook / Instagram -->
+  <meta property="og:see_also" content="https://www.facebook.com" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Smooth Turtle",
+    "url": "https://www.smoothturtle.com",
+    "logo": "https://www.smoothturtle.com/images/turtle-face.png",
+    "description": "AI education for smart non-techies and small businesses in Tampa Bay, FL.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tampa",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "founder": { "@type": "Person", "name": "Dr. Timothy Hays" },
+    "telephone": "+18134448378",
+    "sameAs": ["https://www.smoothturtle.com"]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Favicon & Bookmark Icon -->
+  <link rel="icon"             type="image/png" sizes="32x32" href="images/turtle-face.png" />
+  <link rel="icon"             type="image/png" sizes="16x16" href="images/turtle-face.png" />
+  <link rel="apple-touch-icon"                               href="images/turtle-face.png" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Smooth Turtle Home">
+        <img src="images/turtle-face.png" alt="Smooth Turtle" />
+        <div class="nav-logo-text">
+          <span class="logo-name">Smooth Turtle</span>
+          <span class="logo-tagline">www.smoothturtle.com</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li class="nav-dropdown">
+          <a href="index.html" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false" style="display:flex;align-items:center;gap:6px;">
+            <img src="images/turtle-face.png" alt="" style="height:18px;width:18px;border-radius:50%;object-fit:cover;" />
+            Home &#9662;
+          </a>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li><a href="index.html" role="menuitem">🏠 Home — Top of Page</a></li>
+            <li><a href="index.html#digital-identity" role="menuitem">🔐 Your Digital Identity</a></li>
+            <li><a href="index.html#ai-demo" role="menuitem">🤖 See AI Conversation in Action</a></li>
+            <li><a href="index.html#your-journey" role="menuitem">🚀 Your Journey Starts Here</a></li>
+            <li><a href="what-we-do.html#video-talks" role="menuitem">🎬 Watch Our Informative Talks</a></li>
+            <li><a href="what-we-do.html#our-programs" role="menuitem">📚 Something for Every Level</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-dropdown">
+          <a href="what-we-do.html" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">What We Do &#9662;</a>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li><a href="website-creation.html" role="menuitem">🌐 Website Creation</a></li>
+            <li><a href="what-we-do.html" role="menuitem">🎤 Our Programs &amp; Talks</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <span id="theme-icon">☀</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" style="display:flex;align-items:center;gap:8px;">
+      <img src="images/turtle-face.png" alt="" style="height:22px;width:22px;border-radius:50%;object-fit:cover;" /> Home
+    </a>
+    <a href="index.html#digital-identity" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">🔐 Your Digital Identity</a>
+    <a href="index.html#ai-demo" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">🤖 See AI Conversation in Action</a>
+    <a href="index.html#your-journey" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">🚀 Your Journey Starts Here</a>
+    <a href="what-we-do.html#video-talks" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">🎬 Watch Our Informative Talks</a>
+    <a href="what-we-do.html#our-programs" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">📚 Something for Every Level</a>
+    <a href="about.html">About</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="website-creation.html" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">🌐 Website Creation</a>
+    <a href="what-we-do.html" style="padding-left:1.6rem;font-size:0.88em;opacity:0.85;">🎤 Our Programs &amp; Talks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Hero section">
+    <div id="hero-particles"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="Tagline">
+          <span>🐢</span> Tampa Bay Area, FL (Remote) &bull; www.smoothturtle.com
+        </div>
+
+        <h1 class="hero-title">
+          Come Out of<br />
+          <span class="text-accent">Your Shell</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          "A smooth, deliberate fun ride into the age of AI — while everyone else catches up!"
+        </p>
+
+        <p class="hero-desc">
+          Hands-on Artificial Intelligence (AI) exploring for smart non-techies and small business owners.
+          Get introduced or strengthen your abilities. <strong>It&rsquo;s easier than you think</strong>
+          &mdash; and it&rsquo;s <strong>safe to learn and safe to use.</strong>
+        </p>
+
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary">Book a Free Talk</a>
+          <a href="what-we-do.html" class="btn btn-secondary">See What We Do</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span>FREE</span>
+            <p>Intro Talk (30–45 min)</p>
+          </div>
+          <div class="hero-stat">
+            <span>25+</span>
+            <p>Years of Analytics and AI Strategy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-turtle-wrap">
+          <img
+            src="images/turtle-logo.png"
+            alt="Smooth Turtle AI Explorer — ChatGPT, Claude, Gemini, Grok, Perplexity orbit a friendly AI turtle"
+            class="hero-turtle-img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Ai scroll-down indicator -->
+    <div class="ai-scroll-indicator" onclick="document.getElementById('highlights-section').scrollIntoView({behavior:'smooth'});" role="button" tabindex="0" aria-label="Scroll down to explore" onkeydown="if(event.key==='Enter')this.click();">
+      <svg viewBox="0 0 48 58" width="30" height="36" aria-hidden="true">
+        <!-- Inverted A = downward arrow. Hole inside A = dot of the i in Ai -->
+        <path d="M24,52 L5,14 L43,14 Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+        <line x1="16" y1="27" x2="32" y2="27" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="24" cy="20" r="3.2" fill="var(--accent-gold)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== HIGHLIGHTS ===== -->
+  <section class="highlights" id="highlights-section" aria-label="Key benefits">
+    <div class="highlights-grid">
+      <article class="highlight-card fade-in">
+        <div class="highlight-icon blue">🔒</div>
+        <h3>Safe to Learn &amp; Safe to Use</h3>
+        <p>
+          AI apps are encrypted just like your banking app. They do not save anything unless
+          you explicitly approve it — your data stays yours, always.
+        </p>
+      </article>
+      <article class="highlight-card fade-in">
+        <div class="highlight-icon teal">✨</div>
+        <h3>It's Easier Than You Think</h3>
+        <p>
+          If you can send a text message, you can use AI. No coding, no tech background needed.
+          We meet you exactly where you are and take it from there.
+        </p>
+      </article>
+      <article class="highlight-card fade-in">
+        <div class="highlight-icon green">🌊</div>
+        <h3>Always Smooth Sailing Forward</h3>
+        <p>
+          There is always something new in AI every single day. We keep you current, confident,
+          and gliding ahead — while the world scrambles to catch up.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== SMOOTH OPERATOR (Your Digital Identity) ===== -->
+  <section class="smooth-op-section section-pad" id="digital-identity" aria-label="Your Digital Identity">
+    <div class="container">
+      <div class="smooth-op-inner fade-in">
+        <div>
+          <span class="section-label">Your Digital Identity</span>
+          <h2 class="section-title">
+            Be the <span class="text-accent">Smooth Operator</span><br />
+            of Your Own Life
+          </h2>
+          <p style="color: var(--text-secondary); margin: 18px 0;">
+            Smooth Turtle teaches you to effectively use AI &mdash; to gain new knowledge never
+            aggregated that way before &mdash; just by you talking to your phone. You can then
+            have AI package up whatever you asked it to make (e.g., made-up images, manuscript,
+            flier, email, work/school notes, Excel, PDF files, and so much more) all for free.
+            Manage your information your way, so that it&rsquo;s
+            <strong style="color: var(--text-primary);">yours and no one else&rsquo;s</strong>
+            &mdash; unless you choose to share it. That&rsquo;s the power of owning your own
+            digital persona.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            A <em>smooth operator</em> glides through life &mdash; charming, confident, and in
+            command of each situation. With AI in your hands, that&rsquo;s exactly who you become.
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 28px;">
+            Start Your Journey →
+          </a>
+        </div>
+        <div>
+          <div class="smooth-op-phrases">
+            <span class="smooth-phrase">smooth operator</span>
+            <span class="smooth-phrase">running smoothly</span>
+            <span class="smooth-phrase">silky smooth</span>
+            <span class="smooth-phrase">One c<span style="color:var(--text-primary);text-shadow:0 0 6px rgba(226,240,248,0.7);">oo</span>l syllable</span>
+            <span class="smooth-phrase">smooth sailing</span>
+            <span class="smooth-phrase">smooth move</span>
+            <span class="smooth-phrase">smooth like butter</span>
+            <span class="smooth-phrase">smooth as glass</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.78rem; margin-top: 20px; text-align: center; font-style: italic;">
+            All the best things in life are smooth. Why not your AI journey?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI DEMO ===== -->
+  <section class="section-pad" id="ai-demo" style="background: var(--bg-secondary);" aria-label="Live AI demo">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 36px;">
+        <span class="section-label">See AI in Action</span>
+        <h2 class="section-title">Try an AI <span class="text-accent">Conversation</span></h2>
+        <p class="section-subtitle">Real questions people ask — and what AI can actually do for you.</p>
+      </div>
+      <div class="ai-demo-card" id="ai-demo-card">
+        <div class="ai-demo-tabs">
+          <button class="ai-demo-tab active">🎣 Fishing</button>
+          <button class="ai-demo-tab">🏪 Small Business</button>
+          <button class="ai-demo-tab">✈️ Travel</button>
+          <button class="ai-demo-tab">🔧 DIY Home</button>
+        </div>
+        <div class="ai-demo-body">
+          <div class="ai-demo-question" id="ai-demo-question"></div>
+          <div class="ai-demo-answer-wrap">
+            <div class="ai-demo-answer-label">🐢 Smooth Turtle AI</div>
+            <div class="ai-demo-answer" id="ai-demo-answer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTRO ===== -->
+  <section class="intro-section section-pad" id="your-journey" aria-label="Introduction">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text fade-in">
+          <span class="section-label">Why Smooth Turtle</span>
+          <h2 class="section-title">
+            Your AI Journey Starts<br />
+            <span class="text-accent">Right Here</span>
+          </h2>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">
+            Whether you've never touched an AI tool or you've dabbled and want to go deeper,
+            Smooth Turtle guides you step by step — at your pace, on your terms.
+          </p>
+          <ul class="intro-list">
+            <li>Hands-on AI exploring in a safe, judgment-free space</li>
+            <li>Get AI to plan your travel, DIY projects, and recreation</li>
+            <li>AI tells you things about your environment on the spot</li>
+            <li>No matter how strange or long the question, you'll gain knowledge on the spot</li>
+            <li>Understand ChatGPT, Claude, Gemini, Perplexity, Grok &amp; more</li>
+            <li>Protect your personal information &amp; own your digital life</li>
+          </ul>
+        </div>
+
+        <div class="intro-visual fade-in">
+          <p class="big-quote">
+            "Give us a call to <em>start</em>, <em>build</em>, and <em>excel</em> your journey."
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 24px;">
+            AI can answer questions, help plan any project, analyze your environment in real time,
+            and revolutionize how your small business operates — all from your phone or computer.
+          </p>
+          <p style="font-size: 0.88rem; font-style: italic; color: var(--accent-bright); border-top: 1px solid var(--border); padding-top: 18px; margin-bottom: 18px;">
+            "No matter how strange or long the question, you will gain knowledge on the spot."
+          </p>
+          <div class="ai-wow-callout">
+            <p class="ai-wow-quote">"Wow, <span style="color: var(--accent-gold);">AI</span> can help with that too!?"</p>
+            <p class="ai-wow-sub">That's something you will start saying a lot — and immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner" aria-label="Call to action">
+    <div class="container">
+      <h2>Ready to Glide into the Age of AI?</h2>
+      <p>Your first step costs nothing. Book a free 30–45 minute introductory talk today.</p>
+      <a href="contact.html" class="btn-cta-white">Give Us a Call &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/turtle-face.png" alt="Smooth Turtle" />
+          <h3>Smooth Turtle</h3>
+          <p>
+            AI education for smart non-techies and small businesses. Glide smoothly into the
+            future — safe, confident, and in control.
+          </p>
+          <span class="footer-url">www.smoothturtle.com</span>
+          <div class="footer-social">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon fb" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon ig" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon tik" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.24 8.24 0 004.84 1.56V6.78a4.85 4.85 0 01-1.07-.09z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="what-we-do.html">What We Do</a></li>
+            <li><a href="website-creation.html">Website Creation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="what-we-do.html">Free Intro Talk</a></li>
+            <li><a href="what-we-do.html">Business AI</a></li>
+            <li><a href="what-we-do.html">Hands-On Sessions</a></li>
+            <li><a href="what-we-do.html">Advanced AI - Tailored</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><p>Tampa Bay Area, FL (Remote)</p></li>
+            <li><a href="tel:+18134448378">(813) 444-8378</a></li>
+            <li><a href="contact.html">Send a Message</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Smooth Turtle &mdash; www.smoothturtle.com &mdash; All rights reserved.</p>
+        <p>Tampa Bay Area, FL &bull; AI Education for Everyone</p>
+        <p class="footer-ai-credit">Smooth Turtle: All images and web site pages, excluding videos, were crafted solely by publicly available artificial intelligence systems and human prompts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
